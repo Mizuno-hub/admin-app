@@ -1,3 +1,11 @@
+<h2>社員一覧</h2>
+<ul class="member">
+    <!-- members配列の中身をmember変数に移している -->
+    <!-- idとnameはi番目のmemberのidと名前を参照している -->
+    <li *ngFor="let member of members">
+        <span class="badge">{{ member.id }}</span> {{ member.name }}
+    </li>
+</ul>
 <h2>{{ member.name }}</h2>
 <div><span>id: </span>{{ member.id }}</div>
 <div>
